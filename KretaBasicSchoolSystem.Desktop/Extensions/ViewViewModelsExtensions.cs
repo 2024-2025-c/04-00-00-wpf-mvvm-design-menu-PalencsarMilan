@@ -50,7 +50,7 @@ namespace KretaDesktop.Extensions
             services.AddSingleton<StudentViewModel>();
             services.AddSingleton<StudentView>(s => new StudentView()
             {
-                DataContext = s.GetRequiredService<StudentViewModel>()
+                DataContext = s.GetRequiredService<StudentView>()
             });
 
             // School Citizens
@@ -58,7 +58,7 @@ namespace KretaDesktop.Extensions
             services.AddSingleton<TeacherViewModel>();
             services.AddSingleton<TeacherView>(s => new TeacherView()
             {
-                DataContext = s.GetRequiredService<TeacherViewModel>()
+                DataContext = s.GetRequiredService<TeacherView>()
             });
 
             // School Citizens
@@ -66,7 +66,7 @@ namespace KretaDesktop.Extensions
             services.AddSingleton<ParentViewModel>();
             services.AddSingleton<ParentView>(s => new ParentView()
             {
-                DataContext = s.GetRequiredService<ParentViewModel>()
+                DataContext = s.GetRequiredService<ParentView>()
             });
 
             // School Class

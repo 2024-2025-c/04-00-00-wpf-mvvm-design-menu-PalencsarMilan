@@ -13,6 +13,7 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels.SchoolCitizens
         public SchoolCitizensViewModel()
         {
             _currentSchoolCitizensChildView = new StudentViewModel();
+
             _studentViewModel = new StudentViewModel();
             _teacherViewModel = new TeacherViewModel();
             _parentViewModel = new ParentViewModel();
