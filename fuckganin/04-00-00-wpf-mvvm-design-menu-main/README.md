@@ -1,1 +1,0 @@
-# 04-00-00-wpf-mvvm-design-menu
