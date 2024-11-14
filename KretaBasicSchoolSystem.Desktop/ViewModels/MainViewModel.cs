@@ -15,7 +15,6 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels
         private SchoolCitizensViewModel _schoolCitizensViewModel;
         private SchoolClassesViewModel _schoolClassesViewModel;
         private SchoolSubjectsViewModel _schoolSubjectsViewModel;
-
         public MainViewModel()
         {
             _controlPanelViewModel = new ControlPanelViewModel();
@@ -25,19 +24,19 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels
         }
 
         public MainViewModel(
-            ControlPanelViewModel controlPanelViewModel,  // golf ütő - dependency injection
+            ControlPanelViewModel controlPanelViewModel,
             SchoolCitizensViewModel schoolCitizensViewModel,
-            SchoolClassesViewModel schoolClassesViewModel,
+            SchoolClassesViewModel schoolClassViewModel,
             SchoolSubjectsViewModel schoolSubjectsViewModel
             )
         {
             _controlPanelViewModel = controlPanelViewModel;
             _schoolCitizensViewModel = schoolCitizensViewModel;
-            _schoolClassesViewModel= schoolClassesViewModel;
-            _schoolSubjectsViewModel= schoolSubjectsViewModel;
+            _schoolClassesViewModel = schoolClassViewModel;
+            _schoolSubjectsViewModel = schoolSubjectsViewModel;
 
 
-            // CurrentChildView = _controlPanelViewModel; // amikor elindul a program legyen kiválasztott menüpont
+            CurrentChildView = _controlPanelViewModel;
             ShowDashbord();
         }
 
@@ -66,7 +65,6 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels
             CurrentChildView = _schoolCitizensViewModel;
         }
 
-        // SchoolClass menüpont meghívása
         [RelayCommand]
         public void ShowSchoolClasses()
         {
@@ -79,7 +77,7 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels
         public void ShowSchoolSubjects()
         {
             Caption = "Tantárgyak";
-            Icon = IconChar.ChalkboardUser;
+            Icon = IconChar.GraduationCap;
             CurrentChildView = _schoolSubjectsViewModel;
         }
     }

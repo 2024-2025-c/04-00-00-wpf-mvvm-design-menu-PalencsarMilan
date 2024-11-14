@@ -45,30 +45,43 @@ namespace KretaDesktop.Extensions
                 DataContext = s.GetRequiredService<SchoolCitizensViewModel>()
             });
 
-            // Students
             // School Citizens
+            // Students
             services.AddSingleton<StudentViewModel>();
             services.AddSingleton<StudentView>(s => new StudentView()
             {
                 DataContext = s.GetRequiredService<StudentViewModel>()
             });
 
-            //SchoolClass
-            services.AddSingleton<SchoolClassesViewModel>();
-            services.AddSingleton<SchoolClassesView>(s => new SchoolClassesView
+            // School Citizens
+            // Teachers
+            services.AddSingleton<TeacherViewModel>();
+            services.AddSingleton<TeacherView>(s => new TeacherView()
             {
-                    DataContext = s.GetRequiredService<SchoolClassesViewModel>()
-                }                
-            );
+                DataContext = s.GetRequiredService<TeacherViewModel>()
+            });
 
-            //SchoolSubject
+            // School Citizens
+            // Parents
+            services.AddSingleton<ParentViewModel>();
+            services.AddSingleton<ParentView>(s => new ParentView()
+            {
+                DataContext = s.GetRequiredService<ParentViewModel>()
+            });
+
+            // School Class
+            services.AddSingleton<SchoolClassesViewModel>();
+            services.AddSingleton<SchoolClassesView>(s => new SchoolClassesView()
+            {
+                DataContext = s.GetRequiredService<SchoolClassesViewModel>()
+            });
+
+            // Subjects
             services.AddSingleton<SchoolSubjectsViewModel>();
-            services.AddSingleton<SchoolSubjectsView>(s => new SchoolSubjectsView
+            services.AddSingleton<SchoolSubjectsView>(s => new SchoolSubjectsView()
             {
                 DataContext = s.GetRequiredService<SchoolSubjectsViewModel>()
             });
-
-
 
         }
     }

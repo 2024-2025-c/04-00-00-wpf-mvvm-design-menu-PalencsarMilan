@@ -24,5 +24,10 @@ namespace KretaBasicSchoolSystem.Desktop.Views.SchoolCitizens
         {
             InitializeComponent();
         }
+
+        private void SchoolCitizensMenu_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
