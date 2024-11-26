@@ -30,4 +30,19 @@
     <DataTemplate DataType="{x:Type schoolSubjectsViewModels:SchoolSubjectsViewModel}">
         <schoolSubjectsView:SchoolSubjectsView/>
     </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolGradesViewModel:SchoolGradesViewModel}">
+        <schoolGradesView:GradesView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolGradesViewModel:CurrentLessonViewModel}">
+        <schoolGradesView:CurrentLesson/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolGradesViewModel:EYearViewModel}">
+        <schoolGradesView:EYearView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolGradesViewModel:HYearViewModel}">
+        <schoolGradesView:HYearView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolGradesViewModel:TClassesViewModel}">
+        <schoolGradesView:TClassesView/>
+    </DataTemplate>
 </ResourceDictionary>

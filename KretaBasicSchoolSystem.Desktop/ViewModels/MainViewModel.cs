@@ -5,6 +5,7 @@ using KretaBasicSchoolSystem.Desktop.ViewModels.Base;
 using KretaBasicSchoolSystem.Desktop.ViewModels.ControlPanel;
 using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolCitizens;
 using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolClasses;
+using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolGrades;
 using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolSubjects;
 
 namespace KretaBasicSchoolSystem.Desktop.ViewModels
@@ -81,6 +82,14 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels
             Caption = "Tantárgyak";
             Icon = IconChar.GraduationCap;
             CurrentChildView = _schoolSubjectsViewModel;
+        }
+
+        [RelayCommand]
+        public void ShowSchoolGrades()
+        {
+            Caption = "Osztályzatok";
+            Icon = IconChar.BookAtlas;
+            CurrentChildView = _SchoolGradesViewModel;
         }
     }
 }
