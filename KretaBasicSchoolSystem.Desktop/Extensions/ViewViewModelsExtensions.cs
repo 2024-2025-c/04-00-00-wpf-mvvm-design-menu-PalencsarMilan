@@ -10,8 +10,8 @@ using KretaBasicSchoolSystem.Desktop.Views.ControlPanel;
 using KretaBasicSchoolSystem.Desktop.Views.Login;
 using KretaBasicSchoolSystem.Desktop.Views.SchoolCitizens;
 using KretaBasicSchoolSystem.Desktop.Views.SchoolClasses;
-using KretaBasicSchoolSystem.Desktop.Views.SchoolGrades;
 using KretaBasicSchoolSystem.Desktop.Views.SchoolSubjects;
+using KretaBasicSchoolSystem.Desktop.Views.SchoolGrades;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace KretaDesktop.Extensions
